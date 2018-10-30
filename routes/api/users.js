@@ -13,10 +13,10 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:name', (req, res) => {
-  const name = req.params.name;
-  User.find({ name: name })
+  const { name } = req.params;
+  User.findOne({ name })
     .then(user => {
-      if(user === []){
+      if(!user){
         return res.status(404).json({message: `User: ${name} not found`})
       }
       res.json(user);

@@ -59,8 +59,8 @@ router.delete('/:name', (req, res) => {
 })
 
 router.put('/:name', (req, res) => {
-  //fix this
-  //TODO: create a profile model with 5 items, first name, last name, email
+  fix this
+  TODO: create a profile model with 5 items, first name, last name, email
   findOne()
   .then(user) => {
     findOneAndUpdate()

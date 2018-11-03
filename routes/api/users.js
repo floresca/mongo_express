@@ -58,14 +58,14 @@ router.delete('/:name', (req, res) => {
     .catch(err => res.status(500).json({message: err}));
 })
 
-router.put('/:name', (req, res) => {
-  fix this
-  TODO: create a profile model with 5 items, first name, last name, email
-  findOne()
-  .then(user) => {
-    findOneAndUpdate()
-  }
+// router.put('/:name', (req, res) => {
+//   // fix this
+//   // TODO: create a profile model with 5 items, first name, last name, email
+//   // findOne()
+//   // .then(user) => {
+//   //   findOneAndUpdate()
+//   // }
 
-})
+// })
 
 module.exports = router;

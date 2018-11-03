@@ -17,6 +17,10 @@ const users = require('./routes/api/users');
 
 app.use('/api/users', users);
 
+const characters = require('./routes/api/characters');
+
+app.use('/api/characters', characters);
+
 app.get('/', (req, res) => res.send('Hello'));
 
 const port = process.env.PORT || 8080;
